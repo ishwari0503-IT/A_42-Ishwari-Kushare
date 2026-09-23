@@ -7,136 +7,175 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8f5f2;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    background-color: #eef2ff;
+    padding: 30px;
+    color: #1e293b;
 }
-
-
-/* Main Container */
 
 .container {
-    width: 100%;
-    max-width: 500px;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-
-/* Form Box */
-
-.form-box {
-    background-color: #ffffff;
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(13, 148, 136, 0.18);
-    border: 1px solid #99f6e4;
-}
-
-
-/* Heading */
+/* Main Heading */
 
 h1 {
     text-align: center;
-    color: #0f766e;
-    margin-bottom: 8px;
-}
-
-.subtitle {
-    text-align: center;
-    color: #64748b;
     margin-bottom: 25px;
+    color: #4f46e5;
+    font-size: 32px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #4338ca;
 }
 
 
-/* Form Group */
+/* Form Boxes */
+
+.form-box,
+.table-box,
+.topper-box {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    border: 1px solid #c7d2fe;
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.12);
+}
 
 .form-group {
-    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
 label {
-    display: block;
     font-weight: bold;
-    color: #115e59;
     margin-bottom: 7px;
+    color: #3730a3;
 }
 
-
-/* Input and Select */
-
-input,
-select {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #5eead4;
+input {
+    padding: 11px;
+    border: 1px solid #a5b4fc;
     border-radius: 6px;
     font-size: 15px;
-    background-color: #f0fdfa;
+    background-color: #f8faff;
 }
 
-input:focus,
-select:focus {
+input:focus {
     outline: none;
-    border-color: #0d9488;
-    box-shadow: 0 0 5px rgba(13, 148, 136, 0.25);
+    border-color: #6366f1;
+    box-shadow: 0 0 5px rgba(99, 102, 241, 0.3);
 }
 
 
-/* Error Message */
+/* Marks Layout */
 
-.error {
-    display: block;
-    color: #dc2626;
-    font-size: 13px;
-    margin-top: 5px;
+.marks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 
 /* Button */
 
 button {
-    width: 100%;
-    padding: 13px;
-    background-color: #f97316;
+    padding: 12px 25px;
+    background-color: #4f46e5;
     color: white;
     border: none;
     border-radius: 6px;
+    cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
-    margin-top: 5px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #ea580c;
+    background-color: #3730a3;
+    transform: translateY(-1px);
 }
 
 
-/* Success Message */
+/* Table */
 
-#successMessage {
+.table-box {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #c7d2fe;
+    padding: 12px;
     text-align: center;
-    color: #15803d;
+}
+
+th {
+    background-color: #4f46e5;
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f5f3ff;
+}
+
+tr:hover td {
+    background-color: #e0e7ff;
+}
+
+
+/* Topper */
+
+.topper-box {
+    text-align: center;
+    background-color: #f5f3ff;
+    border: 2px solid #8b5cf6;
+}
+
+.topper-box h2 {
+    color: #7c3aed;
+}
+
+#topper {
+    font-size: 20px;
     font-weight: bold;
-    margin-top: 15px;
+    padding: 15px;
+    color: #5b21b6;
 }
 
 
 /* Responsive Design */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+
+    .marks-container {
+        grid-template-columns: 1fr;
+    }
 
     body {
         padding: 10px;
     }
 
-    .form-box {
-        padding: 25px 20px;
+    .container {
+        width: 100%;
     }
 
-    h1 {
-        font-size: 26px;
+    table {
+        font-size: 13px;
     }
 }
