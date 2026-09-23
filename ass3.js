@@ -130,7 +130,7 @@ function findTopper() {
 
 
     document.getElementById("topper").innerHTML =
-        `🏆 ${topper.name} - Roll No: ${topper.rollNo}
+        ` ${topper.name} - Roll No: ${topper.rollNo}
         <br>
         Total Marks: ${topper.total}/300
         <br>
