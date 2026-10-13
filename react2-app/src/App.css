@@ -1,0 +1,91 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #62e3d1, #70c9dc, #a69be8);
+}
+
+/* Main container */
+.container {
+  width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h2 {
+  color: #6a1b9a;
+  margin-bottom: 25px;
+}
+
+h3 {
+  color: #7b1fa2;
+  margin-top: 25px;
+}
+
+/* Input boxes */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 8px;
+  border: 2px solid #b39ddb;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Input focus */
+input:focus {
+  outline: none;
+  border-color: #7b1fa2;
+  box-shadow: 0 0 5px #ce93d8;
+}
+
+/* Button */
+button {
+  margin: 12px;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #7b1fa2, #e91e63);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Expense details */
+.expense {
+  margin: 12px 0;
+  padding: 12px;
+  background: #f3e5f5;
+  border-left: 5px solid #8e24aa;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.expense p {
+  margin: 6px;
+  color: #333;
+}
+
+/* Month total */
+.container > p {
+  background: #e0f7fa;
+  padding: 10px;
+  border-radius: 8px;
+  color: #006064;
+}

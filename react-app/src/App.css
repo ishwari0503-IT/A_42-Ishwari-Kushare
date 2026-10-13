@@ -1,0 +1,87 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #62e3d1, #70c9dc, #a69be8);
+}
+
+/* Main box */
+.container {
+  width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h2 {
+  color: #4a148c;
+  margin-bottom: 25px;
+}
+
+/* Input boxes */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #b39ddb;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Input when clicked */
+input:focus {
+  outline: none;
+  border-color: #7b1fa2;
+  box-shadow: 0 0 5px #ce93d8;
+}
+
+/* Submit button */
+button {
+  margin-top: 15px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #7b1fa2, #e91e63);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Button hover */
+button:hover {
+  background: linear-gradient(90deg, #e91e63, #7b1fa2);
+  transform: scale(1.05);
+}
+
+/* Student details */
+.details {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f3e5f5;
+  border-left: 5px solid #8e24aa;
+  border-radius: 10px;
+  text-align: left;
+}
+
+/* Details heading */
+.details h3 {
+  color: #6a1b9a;
+  text-align: center;
+}
+
+/* Details text */
+.details p {
+  color: #333;
+  font-size: 16px;
+  margin: 10px 0;
+}
